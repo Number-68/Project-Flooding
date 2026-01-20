@@ -12,6 +12,11 @@
 
 
 	// ports 
-	"forwardPorts": [3000, 5173]
+	"forwardPorts": [3000, 5173],
+
+	"mounts": [
+  		"source=${localEnv:USERPROFILE}\\.ssh,target=/root/.ssh,type=bind"
+	]
+
 
 }
